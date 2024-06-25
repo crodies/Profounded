@@ -1,6 +1,6 @@
 //
 //  ResultsView.swift
-//  profounded
+//  profound
 //
 //  Created by Vansh Patel on 6/18/24.
 //
@@ -8,22 +8,32 @@
 import Foundation
 import SwiftUI
 
-
 struct ResultView: View {
     var answers: [String]
-    var questions: [Question]
+    var quizQuestions: [QuizQuestion]
 
     var body: some View {
-        List {
-            ForEach(0..<questions.count, id: \.self) { index in
-                VStack(alignment: .leading) {
-                    Text(questions[index].title)
-                        .font(.headline)
-                    Text("Your answer: \(answers[index])")
-                        .foregroundColor(.secondary)
+        VStack {
+            List {
+                ForEach(0..<quizQuestions.count, id: \.self) { index in
+                    VStack(alignment: .leading) {
+                        Text(quizQuestions[index].title)
+                            .font(.headline)
+                        Text("Your answer: \(answers[index])")
+                            .foregroundColor(.secondary)
+                    }
+                    .padding()
                 }
-                .padding()
             }
+            
+            NavigationLink(destination: Homepage()) {
+                Text("Continue")
+                    .padding()
+                    .foregroundColor(.white)
+                    .background(Color.blue)
+                    .cornerRadius(10)
+            }
+            .padding(.bottom, 30)
         }
         .navigationBarTitle("Your Results", displayMode: .inline)
     }

@@ -1,8 +1,5 @@
 import SwiftUI
 
-
-
-
 struct ContentView: View {
     @State private var glowing = true
 
@@ -83,12 +80,6 @@ struct GradientText: View {
 }
 
 
-
-
-
 #Preview {
-    basedView()
+    ContentView()
 }
-
-
-

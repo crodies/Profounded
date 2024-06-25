@@ -12,9 +12,18 @@
 		BB77E6BB2C1B4C7500C7F030 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB77E6BA2C1B4C7500C7F030 /* Assets.xcassets */; };
 		BB77E6BE2C1B4C7500C7F030 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB77E6BD2C1B4C7500C7F030 /* Preview Assets.xcassets */; };
 		BB77E6D62C22123C00C7F030 /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB77E6D52C22123C00C7F030 /* ResultsView.swift */; };
-		BB77E6D82C221CE400C7F030 /* MakeGold.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB77E6D72C221CE400C7F030 /* MakeGold.swift */; };
 		BB77E6DA2C22603400C7F030 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB77E6D92C22603400C7F030 /* QuestionView.swift */; };
-		BB77E6DC2C22608D00C7F030 /* HubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB77E6DB2C22608D00C7F030 /* HubView.swift */; };
+		BB77E6DC2C22608D00C7F030 /* Homepage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB77E6DB2C22608D00C7F030 /* Homepage.swift */; };
+		DDAD4A912C2A3BA500596C3B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAD4A902C2A3BA500596C3B /* User.swift */; };
+		DDAD4A932C2A3BD900596C3B /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAD4A922C2A3BD900596C3B /* Image.swift */; };
+		DDAD4A952C2A3BE900596C3B /* Like.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAD4A942C2A3BE900596C3B /* Like.swift */; };
+		DDAD4A972C2A3C0300596C3B /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAD4A962C2A3C0300596C3B /* Question.swift */; };
+		DDAD4A992C2A3C7300596C3B /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAD4A982C2A3C7300596C3B /* DatabaseManager.swift */; };
+		DDAD4A9B2C2A3C8200596C3B /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAD4A9A2C2A3C8200596C3B /* UserManager.swift */; };
+		DDAD4A9E2C2A3E4900596C3B /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = DDAD4A9D2C2A3E4900596C3B /* SQLite */; };
+		DDAD4AA12C2A605D00596C3B /* Philosophies.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAD4AA02C2A605D00596C3B /* Philosophies.swift */; };
+		DDAD4AA32C2A606D00596C3B /* QuestionsBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAD4AA22C2A606D00596C3B /* QuestionsBank.swift */; };
+		DDAD4AA62C2A6A2E00596C3B /* PhilosophyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAD4AA52C2A6A2E00596C3B /* PhilosophyManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,9 +33,17 @@
 		BB77E6BA2C1B4C7500C7F030 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB77E6BD2C1B4C7500C7F030 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BB77E6D52C22123C00C7F030 /* ResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsView.swift; sourceTree = "<group>"; };
-		BB77E6D72C221CE400C7F030 /* MakeGold.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeGold.swift; sourceTree = "<group>"; };
 		BB77E6D92C22603400C7F030 /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
-		BB77E6DB2C22608D00C7F030 /* HubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HubView.swift; sourceTree = "<group>"; };
+		BB77E6DB2C22608D00C7F030 /* Homepage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homepage.swift; sourceTree = "<group>"; };
+		DDAD4A902C2A3BA500596C3B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		DDAD4A922C2A3BD900596C3B /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		DDAD4A942C2A3BE900596C3B /* Like.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Like.swift; sourceTree = "<group>"; };
+		DDAD4A962C2A3C0300596C3B /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		DDAD4A982C2A3C7300596C3B /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		DDAD4A9A2C2A3C8200596C3B /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		DDAD4AA02C2A605D00596C3B /* Philosophies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Philosophies.swift; sourceTree = "<group>"; };
+		DDAD4AA22C2A606D00596C3B /* QuestionsBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsBank.swift; sourceTree = "<group>"; };
+		DDAD4AA52C2A6A2E00596C3B /* PhilosophyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhilosophyManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDAD4A9E2C2A3E4900596C3B /* SQLite in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,10 +78,14 @@
 			isa = PBXGroup;
 			children = (
 				BB77E6B62C1B4C7400C7F030 /* profoundedApp.swift */,
+				DDAD4AA42C2A6A1B00596C3B /* Helpers */,
+				DDAD4A9F2C2A604C00596C3B /* Data */,
+				DDAD4A8F2C2A3B8600596C3B /* Services */,
+				DDAD4A8E2C2A3B7D00596C3B /* Models */,
+				DDAD4A8D2C2A3B6800596C3B /* Database */,
 				BB77E6CC2C1E3AEE00C7F030 /* Views */,
-				BB77E6BA2C1B4C7500C7F030 /* Assets.xcassets */,
 				BB77E6BC2C1B4C7500C7F030 /* Preview Content */,
-				BB77E6D72C221CE400C7F030 /* MakeGold.swift */,
+				BB77E6BA2C1B4C7500C7F030 /* Assets.xcassets */,
 			);
 			path = profounded;
 			sourceTree = "<group>";
@@ -82,9 +104,53 @@
 				BB77E6B82C1B4C7400C7F030 /* ContentView.swift */,
 				BB77E6D52C22123C00C7F030 /* ResultsView.swift */,
 				BB77E6D92C22603400C7F030 /* QuestionView.swift */,
-				BB77E6DB2C22608D00C7F030 /* HubView.swift */,
+				BB77E6DB2C22608D00C7F030 /* Homepage.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		DDAD4A8D2C2A3B6800596C3B /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				DDAD4A982C2A3C7300596C3B /* DatabaseManager.swift */,
+				DDAD4A9A2C2A3C8200596C3B /* UserManager.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		DDAD4A8E2C2A3B7D00596C3B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DDAD4A902C2A3BA500596C3B /* User.swift */,
+				DDAD4A922C2A3BD900596C3B /* Image.swift */,
+				DDAD4A942C2A3BE900596C3B /* Like.swift */,
+				DDAD4A962C2A3C0300596C3B /* Question.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DDAD4A8F2C2A3B8600596C3B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		DDAD4A9F2C2A604C00596C3B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				DDAD4AA02C2A605D00596C3B /* Philosophies.swift */,
+				DDAD4AA22C2A606D00596C3B /* QuestionsBank.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		DDAD4AA42C2A6A1B00596C3B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DDAD4AA52C2A6A2E00596C3B /* PhilosophyManager.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -103,6 +169,9 @@
 			dependencies = (
 			);
 			name = profounded;
+			packageProductDependencies = (
+				DDAD4A9D2C2A3E4900596C3B /* SQLite */,
+			);
 			productName = profounded;
 			productReference = BB77E6B32C1B4C7400C7F030 /* profounded.app */;
 			productType = "com.apple.product-type.application";
@@ -131,6 +200,9 @@
 				Base,
 			);
 			mainGroup = BB77E6AA2C1B4C7400C7F030;
+			packageReferences = (
+				DDAD4A9C2C2A3E4900596C3B /* XCRemoteSwiftPackageReference "SQLite" */,
+			);
 			productRefGroup = BB77E6B42C1B4C7400C7F030 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -158,11 +230,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB77E6DA2C22603400C7F030 /* QuestionView.swift in Sources */,
+				DDAD4A992C2A3C7300596C3B /* DatabaseManager.swift in Sources */,
+				DDAD4A932C2A3BD900596C3B /* Image.swift in Sources */,
 				BB77E6B92C1B4C7400C7F030 /* ContentView.swift in Sources */,
-				BB77E6DC2C22608D00C7F030 /* HubView.swift in Sources */,
-				BB77E6D82C221CE400C7F030 /* MakeGold.swift in Sources */,
+				DDAD4AA12C2A605D00596C3B /* Philosophies.swift in Sources */,
+				DDAD4AA32C2A606D00596C3B /* QuestionsBank.swift in Sources */,
+				BB77E6DC2C22608D00C7F030 /* Homepage.swift in Sources */,
+				DDAD4A9B2C2A3C8200596C3B /* UserManager.swift in Sources */,
+				DDAD4A972C2A3C0300596C3B /* Question.swift in Sources */,
 				BB77E6D62C22123C00C7F030 /* ResultsView.swift in Sources */,
+				DDAD4AA62C2A6A2E00596C3B /* PhilosophyManager.swift in Sources */,
+				DDAD4A952C2A3BE900596C3B /* Like.swift in Sources */,
 				BB77E6B72C1B4C7400C7F030 /* profoundedApp.swift in Sources */,
+				DDAD4A912C2A3BA500596C3B /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,6 +448,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DDAD4A9C2C2A3E4900596C3B /* XCRemoteSwiftPackageReference "SQLite" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stephencelis/SQLite.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.15.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DDAD4A9D2C2A3E4900596C3B /* SQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DDAD4A9C2C2A3E4900596C3B /* XCRemoteSwiftPackageReference "SQLite" */;
+			productName = SQLite;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BB77E6AB2C1B4C7400C7F030 /* Project object */;
 }
