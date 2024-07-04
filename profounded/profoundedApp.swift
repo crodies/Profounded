@@ -6,10 +6,29 @@
 //
 
 import SwiftUI
+import UIKit
+import SQLite
+import SwiftUI
+import FirebaseCore
+import FirebaseFirestore
+import FirebaseStorage
+import FirebaseAuth
+
+class AppDelegate: NSObject, UIApplicationDelegate {
+    func application(_ application: UIApplication,
+                     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+        FirebaseApp.configure()
+        return true
+    }
+}
 
 @main
 struct profoundedApp: App {
     init() {
+        @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+        
+        DatabaseManager.shared.printAllImages()
+
         // Custom Tab Bar Appearance
         let appearance = UITabBarAppearance()
         appearance.configureWithOpaqueBackground()
@@ -19,10 +38,10 @@ struct profoundedApp: App {
         appearance.shadowColor = .clear
         
         let tabBarItemAppearance = UITabBarItemAppearance()
-        tabBarItemAppearance.selected.iconColor = UIColor(red: 0.85, green: 0.53, blue: 0.1, alpha: 1.0) // Light orange/brownish color
-        tabBarItemAppearance.selected.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor(red: 0.85, green: 0.53, blue: 0.1, alpha: 1.0)]
-        tabBarItemAppearance.normal.iconColor = UIColor.gray
-        tabBarItemAppearance.normal.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.gray]
+        tabBarItemAppearance.selected.iconColor = UIColor(red: 0.85, green: 0.65, blue: 0.13, alpha: 1.0) // Light gold
+        tabBarItemAppearance.selected.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor(red: 0.85, green: 0.65, blue: 0.13, alpha: 1.0)]
+        tabBarItemAppearance.normal.iconColor = UIColor(red: 0.85, green: 0.65, blue: 0.13, alpha: 0.5) // Faded gold
+        tabBarItemAppearance.normal.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor(red: 0.85, green: 0.65, blue: 0.13, alpha: 0.5)]
         
         appearance.stackedLayoutAppearance = tabBarItemAppearance
         
@@ -30,6 +49,7 @@ struct profoundedApp: App {
         if #available(iOS 15.0, *) {
             UITabBar.appearance().scrollEdgeAppearance = appearance
         }
+        
     }
 
     var body: some Scene {
@@ -38,3 +58,4 @@ struct profoundedApp: App {
         }
     }
 }
+

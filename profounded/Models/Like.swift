@@ -16,6 +16,7 @@ enum LikeType: String {
 
 struct Like: Identifiable {
     let id: Int64
+    let userId: Int64
     let date: Date
     let type: LikeType
     let isLike: Bool

@@ -11,4 +11,5 @@ struct GeneratedImage: Identifiable {
     let id: Int64
     let userId: Int64
     let url: String
+    let createdAt: Date 
 }

@@ -5,7 +5,6 @@
 //  Created by Vansh Patel on 6/18/24.
 //
 
-import Foundation
 import SwiftUI
 
 struct ResultView: View {
@@ -26,7 +25,7 @@ struct ResultView: View {
                 }
             }
             
-            NavigationLink(destination: Homepage()) {
+            NavigationLink(destination: Homepage().navigationBarHidden(true)) {
                 Text("Continue")
                     .padding()
                     .foregroundColor(.white)
@@ -35,6 +34,6 @@ struct ResultView: View {
             }
             .padding(.bottom, 30)
         }
-        .navigationBarTitle("Your Results", displayMode: .inline)
+        .navigationBarHidden(true)
     }
 }

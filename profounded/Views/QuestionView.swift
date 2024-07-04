@@ -14,7 +14,6 @@ struct QuizQuestion {
 }
 
 struct QuestionView: View {
-    // Example quiz questions
     @State private var quizQuestions = [
         QuizQuestion(title: "If I were to get cut off on the highway, how would I best respond:", choices: ["Get mad", "Keep On Keeping On", "Shoot myself"]),
         QuizQuestion(title: "What is the capital of France?", choices: ["Paris", "London", "Berlin", "Madrid"]),
@@ -22,9 +21,7 @@ struct QuestionView: View {
     ]
     
     @State private var selectedTab = 0
-    
     @State private var answers = Array(repeating: "", count: 3)
-    
     @State private var showResults = false
 
     var body: some View {
@@ -57,7 +54,6 @@ struct QuestionView: View {
                         }
                         .frame(maxWidth: .infinity)
                         .padding()
-                        //.background(Color.gray.opacity(0.2))
                         .cornerRadius(12)
                         
                         if index == quizQuestions.count - 1 {
@@ -86,3 +82,4 @@ struct QuestionView: View {
         }
     }
 }
+
